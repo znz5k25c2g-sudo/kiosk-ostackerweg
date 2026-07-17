@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiosk Ostackerweg</title>
+    <meta name="description" content="Kiosk Ostackerweg- frische Snacks, Getränke und mehr in Duisburg. Öffnungszeiten und Anfahrt.">
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: sans-serif;
+            padding:20px;
+        }
+        h1 {
+            color: #00f2fe;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        a{
+            display: inline-block;
+            background-color: #00f2fe;
+            color: #111;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 12px 24px;
+            border-radius: 25px;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 242, 254,0.3);
+        }
+
+        a:hover {
+            background-color: #4facfe;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(79, 172, 254, 0.5);
+        }
+
+        table {
+            width: 100%;
+            max-width: 400px;
+            border-collapse: collapse;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+
+        th,td {
+           border: 1px solid #444;
+           padding: 10px;
+           text-align: left; 
+        }
+
+        th {
+            background-color: #222;
+            color: #00f2fe;
+        }
+
+        .oeffnungszeiten h3 {
+            color: #00f2fe;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .oeffnungszeiten p {
+            margin: 8px 0;
+            font-size: 16px;
+                }
+        main {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }  
+
+        main > section {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .kontakt label {
+            display: block;
+            margin-top: 12px;
+            margin-bottom: 4px;
+        }
+
+        .kontakt {
+            flex-basis: 100%;
+        }
+
+        .kontakt input,
+        .kontakt textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #444;
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            font-family: inherit;
+        }
+            </style>
+</head>
+<body> 
+<header>
+    <h1>Willkommen beim Kiosk Ostackerweg</h1>
+    <p>Hier entsteht das Meisterwerk.</p>
+    </header>
+    <main>
+        <section class="snacks">
+            <h2>Unsere Top-Snacks</h2>
+            <ul>
+                <li> Kalter Eistee</li>
+                <li>Frische Gemischte Tüte</li>
+                <li>Knusprige Chips</li>
+            </ul>
+    <img src="https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?w=500" alt="Kalter Eistee">
+    </section>
+    <section class="preisliste">
+    <h3>Unsere Preisliste</h3>
+    <table>   
+        <tr>
+            <th>Snack</th>
+            <th>Preis</th>
+        </tr>
+        <tr>
+            <td>Kalter Eistee</td>
+            <td>1,50€</td>
+        </tr>
+        <tr>
+            <td>Frische Gemischte Tüte</td>
+            <td>2,00€</td>
+                </tr>
+                <tr>
+                    <td>Knusprige Chips</td>
+                    <td>1,80€</td>
+                        </tr>
+                    </table>
+                </section>
+    <section class="oeffnungszeiten">
+        <h3>Unsere Öffnungszeiten</h3>
+        <p><strong>Montag-Samstag:</strong> 08:00-22:00 Uhr</p>
+        <p><strong>Sonntag & Feiertage:</strong> 10:00-20:00</p>
+        </section>
+        
+        <section class="kontakt">
+            <h3>Schreib uns eine Nachricht</h3>
+            <form>
+                <label for="name">Dein Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Deine E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="nachricht">Deine Nachricht:</label>
+                <textarea id="nachricht" name="nachricht" required></textarea>
+
+                <button type="submit">Absenden</button>
+            </form>
+        </section>
+</main>
+
+
+<footer>
+    <p>Du willst vorbeikommen? Hier findest du uns</p>
+    <a href="https://share.google/frpIEEDMIjQyv7uXd" target="_blank">Auf Google Maps anzeigen</a>
+</footer>
+</body>
+</html>
